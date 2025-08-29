@@ -1,0 +1,41 @@
+# Inicio 
+#     Definir palabra_secreta
+#     Definir letras_adivinadas como lista vacía
+#     Definir intentos_restantes como número máximo de intentos
+
+#     Mientras intentos_restantes > 0 Y palabra no adivinada
+#         Mostrar palabra con letras adivinadas y guiones bajos
+#         Pedir letra al usuario
+
+#         Si letra está en palabra_secreta
+#             Añadir letra a letras_adivinadas
+#         Sino
+#             Restar 1 a intentos_restantes
+
+#         Si todas las letras de palabra_secreta están en letras_adivinadas
+#             Mostrar "¡Ganaste!"
+#             Terminar
+
+#     Si intentos_restantes == 0
+#         Mostrar "Perdiste. La palabra era: " + palabra_secreta
+# Fin 
+# Autor: Marcos Delgado
+# Fecha: 2024-10-03
+def MetodoHagman():
+        palabraSecreta=""
+        letrasAdivinadas=[]
+        intentosRestantes=0
+        print("\n")
+        print("################ H A G M A N ################")
+        print(f"")
+        print ("Bienvenido al juego del Ahorcado")
+        while True:
+            try:
+                palabraSecreta= input("Ingresa la palabra secrreta: ").toLowerCase()
+            except ValueError:
+                print("Por favor, un texto válido.")
+if __name__== "__main__":
+    MetodoHagman()
+
+
+    ##metodo incompleto
